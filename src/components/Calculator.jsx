@@ -22,41 +22,30 @@ function Calculator() {
       }
     }
   
-    // const increase = () => {
-    //   let font = textRef.current.style.fontSize;
-    //   let fontNum = font.toString().substr(0, font.toString().length-2);
-    //   let numFont = +fontNum;
-    //   console.log("font", font);
-    //   font = `${numFont+2}px`;
-    //   // textRef.current.style.fontSize = `${}`
-    //   console.log("font after", font);
-    //   setText(textRef.current.style.fontSize=`${numFont+2}px`);
-    // }
-  
     return (
         <div className="title">
             <div className="jumbotron">
                 <h2>A mini calculator</h2>
             </div>
             <form>
-                <div class="form-group row">
-                    <label for="num1" class="col-sm-2 col-form-label">Enter num 1</label>
-                    <div class="col-sm-8">
+                <div className="form-group row">
+                    <label for="num1" className="col-sm-2 col-form-label">Enter num 1</label>
+                    <div className="col-sm-8">
                         <input 
                             type="number" 
-                            class="form-control" 
+                            className="form-control" 
                             value={num1} 
                             placeholder="Enter num1"
                             onChange={e => setNum1(e.target.value)}
                         />
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="num2" class="col-sm-2 col-form-label">Enter num 2</label>
-                    <div class="col-sm-8">
+                <div className="form-group row">
+                    <label for="num2" className="col-sm-2 col-form-label">Enter num 2</label>
+                    <div className="col-sm-8">
                         <input 
                             type="number" 
-                            class="form-control"
+                            className="form-control"
                             value={num2} 
                             placeholder="Enter num2"
                             onChange={e => setNum2(e.target.value)}
@@ -64,33 +53,38 @@ function Calculator() {
                     </div>
                 </div>
                 <div className="form-group row">
-                    <label for="operation" class="col-sm-2 col-form-label">Enter operator</label>
-                    <div class="col-sm-8">
+                    <label for="operation" className="col-sm-2 col-form-label">Enter operator</label>
+                    <div className="col-sm-8">
                         <button 
                             type="button" 
-                            class="btn btn-primary mx-2"
+                            className="btn btn-primary mx-2"
                             onClick={() => {calcHandler('+')}}
                         >Add</button>
                         <button 
                             type="button" 
-                            class="btn btn-secondary mx-2"
+                            className="btn btn-secondary mx-2"
                             onClick={() => calcHandler('-')}
                         >Subtract</button>
                         <button 
                             type="button" 
-                            class="btn btn-success mx-2"
+                            className="btn btn-success mx-2"
                             onClick={() => calcHandler('*')}
                         >Multiply</button>
                         <button 
                             type="button" 
-                            class="btn btn-danger mx-2"
+                            className="btn btn-danger mx-2"
                             onClick={() => calcHandler('/')}
                         >Divide</button>
+                         <button 
+                            type="button" 
+                            className="btn btn-primary mx-2"
+                            onClick={() => {setNum1(''); setNum2('');}}
+                        >Clear</button>
                     </div>
                 </div>
                 <div className="form-group row">
-                     <label for="row" class="col-sm-2 col-form-label">Result</label>
-                     <div class="col-sm-4 pt-1"><h4>{result && result}</h4></div>
+                     <label for="row" className="col-sm-2 col-form-label">Result</label>
+                     <div className="col-sm-4 pt-1"><h4>{result && result}</h4></div>
                 </div>
             </form>
 

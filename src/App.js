@@ -7,6 +7,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import FontModifer from './components/FontModifer';
+import HeadingModifier from './components/HeadingModifier';
 
 function App() {
 
@@ -21,7 +23,9 @@ function App() {
             <Route path="/topics">topics</Route> 
           </Switch>
         </Router> */}
-        <Calculator/>
+        {/* <Calculator/> */}
+        {/* <FontModifer/> */}
+        <HeadingModifier/>
       </section>
     </main>
   )
