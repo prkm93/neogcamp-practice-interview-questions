@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import FontModifer from './components/FontModifer';
 import HeadingModifier from './components/HeadingModifier';
+import ColorModifier from './components/ColorModifier';
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
         </Router> */}
         {/* <Calculator/> */}
         {/* <FontModifer/> */}
-        <HeadingModifier/>
+        {/* <HeadingModifier/> */}
+        <ColorModifier/>
       </section>
     </main>
   )
