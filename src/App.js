@@ -10,6 +10,7 @@ import {
 import FontModifer from './components/FontModifer';
 import HeadingModifier from './components/HeadingModifier';
 import ColorModifier from './components/ColorModifier';
+import PasswordChecker from './components/PasswordChecker';
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
         {/* <Calculator/> */}
         {/* <FontModifer/> */}
         {/* <HeadingModifier/> */}
-        <ColorModifier/>
+        {/* <ColorModifier/> */}
+        <PasswordChecker/>
       </section>
     </main>
   )
