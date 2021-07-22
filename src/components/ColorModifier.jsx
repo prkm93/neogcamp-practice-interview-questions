@@ -9,12 +9,17 @@ function ColorModifier() {
     }
 
     return (
-        <div>
-            <input type="text" value={text} onChange={e => setText(e.target.value)}/>
-            <button onClick={() => colorHandler('red')}>red</button>
-            <button onClick={() => colorHandler('green')}>green</button>
-            <button onClick={() => colorHandler('blue')}>blue</button>
-            <h3 ref={textRef}>{text}</h3>
+        <div className="title">
+            <div className="form-group row">
+                <label htmlFor="" className="col-sm-2 col-form-label">Enter text:</label>
+                <div className="col-sm-8">
+                    <input type="text" className="form-control" value={text} onChange={e => setText(e.target.value)}/>
+                </div>
+            </div>
+            <button type="button" className="btn btn-danger" onClick={() => colorHandler('red')}>red</button>
+            <button type="button" className="btn btn-success mx-3" onClick={() => colorHandler('green')}>green</button>
+            <button type="button" className="btn btn-primary" onClick={() => colorHandler('blue')}>blue</button>
+            <div className="mt-4"><h3 ref={textRef}>{text}</h3></div>
         </div>
     )
 }

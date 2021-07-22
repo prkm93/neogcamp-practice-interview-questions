@@ -28,8 +28,8 @@ function App() {
         {/* <Calculator/> */}
         {/* <FontModifer/> */}
         {/* <HeadingModifier/> */}
-        {/* <ColorModifier/> */}
-        <PasswordChecker/>
+        <ColorModifier/>
+        {/* <PasswordChecker/> */}
       </section>
     </main>
   )
