@@ -18,6 +18,9 @@ function PasswordChecker() {
 
     return (
         <div className="title">
+            <div className="jumbotron">
+                <h2>Password Checker</h2>
+            </div>
             <form>
                 <div className="form-group row">
                     <label htmlFor="password" className="col-sm-2 col-form-label">Enter passsword:</label>

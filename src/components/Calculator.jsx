@@ -78,7 +78,7 @@ function Calculator() {
                          <button 
                             type="button" 
                             className="btn btn-primary mx-2"
-                            onClick={() => {setNum1(''); setNum2('');}}
+                            onClick={() => {setNum1(''); setNum2(''); setResult('');}}
                         >Clear</button>
                     </div>
                 </div>

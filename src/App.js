@@ -25,11 +25,11 @@ function App() {
             <Route path="/topics">topics</Route> 
           </Switch>
         </Router> */}
-        {/* <Calculator/> */}
-        {/* <FontModifer/> */}
-        {/* <HeadingModifier/> */}
+        <Calculator/>
+        <FontModifer/>
+        <HeadingModifier/>
         <ColorModifier/>
-        {/* <PasswordChecker/> */}
+        <PasswordChecker/>
       </section>
     </main>
   )

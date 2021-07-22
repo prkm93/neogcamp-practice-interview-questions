@@ -10,6 +10,9 @@ function ColorModifier() {
 
     return (
         <div className="title">
+            <div className="jumbotron">
+                <h2>Text Color Modifier</h2>
+            </div>
             <div className="form-group row">
                 <label htmlFor="" className="col-sm-2 col-form-label">Enter text:</label>
                 <div className="col-sm-8">
