@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import {Button} from 'react-bootstrap'
+import React, { useState } from 'react';
 
 function Calculator() {
 
@@ -87,34 +86,6 @@ function Calculator() {
                      <div className="col-sm-4 pt-1"><h4>{result && result}</h4></div>
                 </div>
             </form>
-
-
-
-
-            
-            {/* <div className="num1">
-              <label htmlFor="num1"> enter 1st no.</label>
-              <input type="text" onChange={(e) => setNum1(e.target.value)}/>
-            </div>
-            <div className="num2">
-              <label htmlFor="num2">enter 2nd no.</label>
-              <input type="text" onChange={(e) => setNum2(e.target.value)}/>
-            </div>
-            <div>
-              <label htmlFor="operation">Enter operation:</label>
-                <select name="operation" id="operation" onChange={e => setOperation(e.target.value)}>
-                  <option value="+">+</option>
-                  <option value="-">-</option>
-                  <option value="*">*</option>
-                  <option value="/">/</option>
-                </select>
-            </div>
-            <div className="button">
-              <button onClick={calcHandler}>Calculate</button>
-            </div>
-            <div>
-              your output is: {result ? result : null}
-            </div> */}
         </div>
     )
 }
