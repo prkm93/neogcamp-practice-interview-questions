@@ -19,7 +19,7 @@ function PasswordChecker() {
     return (
         <div className="title">
             <div className="jumbotron">
-                <h2>Password Checker</h2>
+                <h2>Password Validator</h2>
             </div>
             <form>
                 <div className="form-group row">
